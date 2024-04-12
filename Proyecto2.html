@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="./Proyecto.css">
+</head>
+<body>
+    <header>
+        <h1>Gestor de Tareas</h1>
+        <div class="task-inputs">
+            <input type="text" id="taskInput" placeholder="Ingrese una tarea...">
+            <div>
+             <label for="taskStartDate">Fecha de vencimiento</label>
+            <input type="date" id="taskDueDate" placeholder="Fecha de vencimiento">
+            <input type="time" id="taskDueTime" placeholder="Hora de vencimiento">
+        </div>
+        <div>
+            <label for="taskStartDate">Fecha de inicio</label>
+            <input type="date" id="taskStartDate" placeholder="Fecha de inicio">
+            <input type="time" id="taskStartTime" placeholder="Hora de inicio">
+            <button onclick="agregarTarea()">Agregar Tarea</button>
+        </div>
+    </header>
+    <main id="taskList">
+        <!-- Los elementos de la tarea se agregarán dinámicamente aquí -->
+    </main>
+    <script src="./Proyecto.js"></script>
+</body>
+</html>
